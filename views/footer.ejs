@@ -13,7 +13,7 @@
                 <div class="col-lg-4 col-md-6 col-xs-6"><a href="/home.html">Report</a></div>
                 <div class="col-lg-4 col-md-6 col-xs-6"><a href="/home.html">Terms</a></div>
                 <div class="col-lg-6 col-md-6 col-xs-6 footerIcon" > <a href="https://instagram.com/mastork.technologies?utm_medium=copy_link"><i class="fa-brands fa-instagram connectLogo" ></i></a>                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 footerIcon" > <a href=""><i class="fa-brands fa-linkedin connectLogo"></i></a></div>
+                <div class="col-lg-6 col-md-6 col-xs-6 footerIcon" > <a href="https://www.linkedin.com/company/mastork-technologies/"><i class="fa-brands fa-linkedin connectLogo"></i></a></div>
             </div>
             </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -33,5 +33,30 @@
     function closes(){
           document.getElementById("phnnav").style.display="none";
     }
+
+    var cursor=document.querySelector(".cursor");
+          document.addEventListener("mousemove",function(e){
+              cursor.style.cssText="left: "+ e.clientX + "px;top:"+e.clientY+"px;";
+          });
+  
+          window.addEventListener('scroll',reveal);
+          function reveal(){
+              var reveals=document.querySelectorAll('.reveal');
+      
+      for(i=0;i<reveals.length;i++){
+          let windowHeight = window.innerHeight;
+      var revealtop=reveals[i].getBoundingClientRect().top;
+      var revealPoint=150;
+      
+      if(revealtop< windowHeight-revealPoint){
+      reveals[i].classList.add('active');
+      }
+      else{
+      reveals[i].classList.remove('active');
+      
+      }
+          }
+             
+              }
 </script>
 </html>

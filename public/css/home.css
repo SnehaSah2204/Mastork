@@ -7,7 +7,17 @@ body{
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.reveal.active{
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+}
 a{
   color: #C2BBB9;
   text-decoration: none;
@@ -764,6 +774,12 @@ margin: auto;
     padding: 1%;
     top: 1%;
 }
+.serviceContent1{
+  display: none;
+}
+.serviceContent{
+  display: block;
+}
 
   @media (min-width: 993px) and (max-width:1200px) {
     .button-3 {
@@ -876,6 +892,12 @@ margin: auto;
     }
     .phoneCarousel{
       display: none;
+    }
+    .serviceContent1{
+      display: none;
+    }
+    .serviceContent{
+      display: block;
     }
 }
 @media (min-width: 768px) and (max-width:993px) {
@@ -1064,6 +1086,12 @@ margin: auto;
 #opensidebarmenu:checked ~ .sidetoggleopenmenu{
   transform: translateY(-79px); 
   }  
+  .serviceContent1{
+    display: none;
+  }
+  .serviceContent{
+    display: block;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
         .button-3 {
@@ -1271,6 +1299,12 @@ margin: auto;
   #opensidebarmenu:checked ~ .sidetoggleopenmenu{
       transform: translateY(-57px); 
       } 
+      .serviceContent1{
+        display: block;
+      }
+      .serviceContent{
+        display: none;
+      }
 }
 
 @media (max-width: 576px) {
@@ -1595,6 +1629,12 @@ color: #c5c6d0;
         border-bottom: 2.5px solid white;
         width: 21px;
         height: 7px;
+    }
+    .serviceContent1{
+      display: block;
+    }
+    .serviceContent{
+      display: none;
     }
   }
 
