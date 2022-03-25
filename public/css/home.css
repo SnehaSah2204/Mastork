@@ -36,7 +36,7 @@ a:hover{
 }
 
 .headingphn{
-  font-size: 20px;
+  font-size: 17px;
   text-transform: uppercase;
   color: #C2BBB9;
   font-family: 'Philosopher', sans-serif;
@@ -1047,7 +1047,7 @@ margin: auto;
     /* margin-left: 10%; */
 }
 .headingphn {
-  font-size: 31px;
+  font-size: 28px;
   margin-top: 2%;
   text-transform: uppercase;
 }
@@ -1068,7 +1068,7 @@ margin: auto;
       position: absolute;
       right: 6%;
       padding: 1%;
-      top: 2%;
+      top: 1.5%;
       display: none;
   }
 /* individual toggle lines styling */
@@ -1259,7 +1259,7 @@ margin: auto;
             /* margin-left: 10%; */
         }
         .headingphn {
-          font-size: 24px;
+          font-size: 21px;
           margin-top: 2%;
           text-transform: uppercase;
         }
@@ -1506,7 +1506,7 @@ margin: auto;
             /* margin-left: 10%; */
         }
         .headingphn {
-          font-size: 20px;
+          font-size: 17px;
           margin-top: 2%;
           text-transform: uppercase;
         }
