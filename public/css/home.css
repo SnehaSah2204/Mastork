@@ -267,7 +267,7 @@ transform: scale(1.2);
 }
 .sec4RightDiv{
     padding-top: 5%;
-    height: 550px;
+    height: 476px;
 }
 .floatingElements{
     width: 100%;
@@ -600,9 +600,10 @@ font-weight: 500;
   background-color: #c4c4c4;
   width: 60%;
   text-align: center;
-  padding: 3% 8% 3% 2%;
+  /* padding: 3% 8% 3% 2%; */
   color: #000000;
   /* position: relative; */
+  border-radius: 6px;
   box-shadow: rgba(167, 155, 155, 0.35) 0px 5px 15px;
 
 }
@@ -627,21 +628,36 @@ font-weight: 500;
   text-align: justify;
   /* position: relative; */
 }
+.serviceLeft p{
+  padding: 3% 12% 3% 3%;
+}
+.serviceRight p{
+  padding: 3% 4% 3% 16%;
+} 
+.serviceRight h2{
+  margin-top: 4%;
+}
+.serviceLeft h2{
+  padding-top: 4%;
+
+}
+
 .serviceBoxRight{
   /* background-color: red; */
   position: relative;
   height: 400px;
   width: 100%;
-  margin-top: 14%;
+  margin-top: 3%;
 }
 .serviceRight{
   background-color: #c4c4c4;
   width: 45%;
   text-align: center;
-  padding: 3% 2% 3% 8%;
+  /* padding: 3% 2% 3% 8%; */
   color: #000000;
   position: absolute;
   right: 0;
+  border-radius: 6px;
   /* position: relative; */
   box-shadow: rgba(167, 155, 155, 0.35) 0px 5px 15px;
 
@@ -673,11 +689,81 @@ font-weight: 500;
   .footerIcon{
     margin-top: 8%;
   }
+  .laptopCarousel{
+    display: block;
+  }
+  .phoneCarousel{
+    display: none;
+  }
 
 
   /* all good  */
+/* toggle button css */
+#opensidebarmenu{
+  z-index:31;  
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top:45%;
+  display:none;
+}
+#opensidebarmenu:checked ~ .sidetoggleopenmenu{
+  transform: translateY(106px); 
+  z-index: 3;
+}
+.sidebarmenutoggle{
+  z-index:31;  
+  cursor: pointer;
+  z-index: 3;
+  /* background-color: red; */
+  position: absolute;
+  right: 8%;
+  padding: 1%;
+  top: 35%;
+  display: none;
+}
+/* the toggle menu when opened  */
+.sidetoggleopenmenu{
+  background-color: #111111;
+  color: #C2BBB9;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  padding-top: 10%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transform: translateY(-252px);      
+  transition: transform 300ms ease-in-out;
+  display: none;
+  
+}  
+.menu li{
+list-style: none;
+padding: 3% 0% 4% 0%;
+border-bottom: 1px solid #939292;
+width: 55%;
+margin: auto;
+}
+.ddclose{
+  transform: translateY(-106px); 
+}
+/* the toggle bar icon styling  */
+.spinner{
+  z-index:31;  
+  border-bottom: 3.5px solid white;
+  width: 26px;
+  height: 9px;
+}
 
-
+  .sidebarmenutoggle {
+    display: none;
+    right: 6%;
+    z-index: 3;
+    padding: 1%;
+    top: 1%;
+}
 
   @media (min-width: 993px) and (max-width:1200px) {
     .button-3 {
@@ -784,6 +870,12 @@ font-weight: 500;
         position: absolute;
         top: 35%;
         left: -64%;
+    }
+    .laptopCarousel{
+      display: block;
+    }
+    .phoneCarousel{
+      display: none;
     }
 }
 @media (min-width: 768px) and (max-width:993px) {
@@ -937,6 +1029,41 @@ font-weight: 500;
   margin-top: 2%;
   text-transform: uppercase;
 }
+.laptopCarousel{
+  display: block;
+}
+.phoneCarousel{
+  display: none;
+}
+#opensidebarmenu{
+  display: block;
+  visibility: hidden;
+  }
+  .sidebarmenutoggle {
+      z-index: 31;
+      cursor: pointer;
+      /* background-color: red; */
+      position: absolute;
+      right: 6%;
+      padding: 1%;
+      top: 2%;
+      display: none;
+  }
+/* individual toggle lines styling */
+.sidebarmenutoggle{
+  cursor: pointer;
+  display: inline-block;
+  }
+/* the dropdown toggle menu  */
+.sidetoggleopenmenu{
+  display: block;
+  padding: 22% 0% 5% 0%;
+  opacity: 0.8;
+  transform: translateY(-812px);   
+  }  
+#opensidebarmenu:checked ~ .sidetoggleopenmenu{
+  transform: translateY(-79px); 
+  }  
 }
 @media (min-width: 576px) and (max-width: 768px) {
         .button-3 {
@@ -1115,9 +1242,44 @@ font-weight: 500;
           text-align: center;
           font-family: 'Philosopher', sans-serif;
       }
+      .sec4RightDiv {
+        padding-top: 5%;
+        height: 276px;
+    }
+    .laptopCarousel{
+      display: block;
+    }
+    .phoneCarousel{
+      display: none;
+    }
+    #opensidebarmenu{
+      display: block;
+      visibility: hidden;
+      }
+  /* individual toggle lines styling */
+  .sidebarmenutoggle{
+      cursor: pointer;
+      display: inline-block;
+      }
+  /* the dropdown toggle menu  */
+  .sidetoggleopenmenu{
+      display: block;
+      padding: 22% 0% 5% 0%;
+      opacity: 0.8;
+      transform: translateY(-613px);   
+      }  
+  #opensidebarmenu:checked ~ .sidetoggleopenmenu{
+      transform: translateY(-57px); 
+      } 
 }
 
 @media (max-width: 576px) {
+  .photoDiv1 h4 {
+    margin-top: 5%;
+    font-size: 14px !important;
+    margin-left: 3%;
+    margin-bottom: 0;
+}
         .section3Para {
             margin-top: 2%;
             font-size: 16px;
@@ -1158,12 +1320,12 @@ font-weight: 500;
         }
         .sec4RightDiv {
             padding-top: 5%;
-            height: 474px;
+            height: 115px;
         }
         .section5 {
             width: 82%;
             margin: auto;
-            margin-top: 34%;
+            margin-top: 12%;
             text-align: center;
             align-items: center;
         }
@@ -1194,7 +1356,7 @@ font-weight: 500;
             height: 100px;
             border-radius: 100%;
             top: -17%;
-            left: 38%;
+            left: 41%;
         }
         .section7 h1 {
             margin-top: 34%;
@@ -1227,7 +1389,7 @@ font-weight: 500;
             width: 121px;
             height: 57px;
             top: -21%;
-            left: 35%;
+            left: 38%;
         }
         .userTitle{
             font-size: 14px;
@@ -1324,7 +1486,7 @@ font-weight: 500;
       .serviceRight {
         background-color: #c4c4c4;
         width: 98%;
-        margin-top: -24%;
+        margin-top: 7%;
         margin-bottom: -4%;
         text-align: center;
         padding: 3% 7% 3% 8%;
@@ -1345,11 +1507,11 @@ font-weight: 500;
       box-shadow: rgb(167 155 155 / 35%) 0px 5px 15px;
   }
   .shiftApp {
-    margin-top: -56%;
+    margin-top: 75%;
     padding: 9%;
 }
 .videoEditing{
-  margin-top: -60%;
+  margin-top: 8%;
 }
 .footerIcon{
   margin-top: 0%;
@@ -1364,7 +1526,78 @@ font-weight: 500;
   margin-right: 0%;
   margin-left: 0%;
 }
+.floatImg{
+  height: 50px !important;
+  width: 35px !important;
+}
+.myServiceCard{
+  transition: none;
+  height: 450px;
+}
+.linkedInPic {
+    height: 15px !important;
+    width: 15px !important;
+    position: absolute;
+    right: -3% !important;
+    bottom: 15px !important;
+}
+.photoDiv h4, .photoDiv1 h4 {
+margin-top: 10%;
+font-size: 12px;
+margin-left: 3%;
+margin-bottom: 0;
+color: #c5c6d0;
+
+}
+.photoDiv p, .photoDiv1 p {
+display: inline-block;
+margin-left: 3%;
+font-weight: 400;
+font-size: 9px !important;
+color: #c5c6d0;
 }  
+.myServiceCard:hover{
+  transform: none; 
+  }
+  .laptopCarousel{
+    display: none;
+  }
+  .phoneCarousel{
+    display: block;
+  }
+  #opensidebarmenu{
+    display: block;
+    visibility: hidden;
+    }
+/* individual toggle lines styling */
+.sidebarmenutoggle{
+    cursor: pointer;
+    display: inline-block;
+    }
+/* the dropdown toggle menu  */
+.sidetoggleopenmenu{
+    display: block;
+    padding: 22% 0% 5% 0%;
+    opacity: 0.8;
+    transform: translateY(-613px);   
+    }  
+#opensidebarmenu:checked ~ .sidetoggleopenmenu{
+    transform: translateY(-40px); 
+    }  
+    .sidebarmenutoggle {
+        right: 6%;
+        padding: 1%;
+        top:2%;
+        z-index: 3;
+    }
+    .spinner {
+        z-index: 31;
+        border-bottom: 2.5px solid white;
+        width: 21px;
+        height: 7px;
+    }
+  }
+
 .cursor{
     position: fixed;
     width: 45px;

@@ -32,6 +32,31 @@
             </div>
     </section>
 
+     <!-- making the toggle bar -->
+     <input type="checkbox" id="opensidebarmenu" >
+     <label for="opensidebarmenu" class="sidebarmenutoggle">
+     <div class="spinner tops"></div>
+     <div class="spinner mids"></div>
+     <div class="spinner bots"></div>
+     </label>  
+ 
+     <div class="sidetoggleopenmenu dropdown" id="dd" onclick="closeDd()">
+     <ul class="menu">
+         <li><a href= "/">Home</a></li> 
+         <li><a href= "/about">About Us</a></li> 
+         <li><a href= "/services">Our Services</a></li> 
+         <li><a href= "/#contact">Connect</a></li> 
+         <li><a href= "" onclick="closes()">Close</a></li> 
+
+     </ul>
+     </div> 
+     <script>
+         function closeDd(){
+          //    alert("HI");
+          document.getElementById("dd").style.transform="translateY(470)";
+         }
+      </script>
+
     <section class="nav" id="phnheader" style="display: none;" >
         <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; justify-content: left;">
         <div style="display: flex; flex-direction: row; align-items: center; cursor: pointer; " onclick="show()">
@@ -39,14 +64,14 @@
             <a ><h1 class="headingphn"> &nbsp;Mastork Technologies</h1> </a>
         </div>
         </div>
-       
+              
     </section>
     <div id="phnnav" style="display: none; flex-direction: column; text-align: center; padding: 2%;">
         <a class="navitem" style="margin: 3% 0%; " href="/">Home </a>
         <a class="navitem" style="margin: 3% 0%;" href="/about">About us</a>
         <a class="navitem" style="margin: 3% 0%;" href="/services">Our services</a>
         <a class="navitem" style="margin: 3% 0%;" href="/#contact">Contact us</a>
-        <a href="tel:+918191944621" style="margin: 3% 25%;" class="btn1">Get in Touch</a>
+        <a href="#contact" style="margin: 3% 25%;" class="btn1">Get in Touch</a>
         <div style="cursor: pointer;" onclick="closes()">
             <a >Close</a>
         </div>
