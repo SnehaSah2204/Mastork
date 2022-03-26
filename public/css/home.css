@@ -1305,6 +1305,9 @@ margin: auto;
       .serviceContent{
         display: none;
       }
+      .cursor{
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1636,6 +1639,21 @@ color: #c5c6d0;
     .serviceContent{
       display: none;
     }
+    .techSection1 h1 {
+      font-weight: 900;
+      font-size: 33px;
+      color: white;
+      animation: type 3s steps(16);
+      /* animation-iteration-count: infinite; */
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 4px solid #9678B6;
+      width: 16ch;
+  }
+  .cursor{
+    display: none;
+}
+
   }
 
 .cursor{
@@ -1650,4 +1668,5 @@ color: #c5c6d0;
     pointer-events: none;
     transform: translate(-50%,-50%);
     transition: .1s;
+    display: inline-block;
 }
