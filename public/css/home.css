@@ -1651,9 +1651,8 @@ color: #c5c6d0;
       width: 16ch;
   }
   .cursor{
-    display: none;
+    display: none !important;
 }
-
   }
 
 .cursor{
